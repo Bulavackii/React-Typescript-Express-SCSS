@@ -4,9 +4,6 @@
 # Запуск фронтенда:
 npm run start-f
 
-# Запуск фронтенда в режиме разработки:
-npm run dev-f
-
 # Сборка
 npm run build
 
@@ -23,9 +20,6 @@ npm run format-frontend
 
 # Запуск бэкенда:
 npm run start-b
-
-# Запуск бэкенда в режиме разработки:
-npm run dev-b
 
 # Сборка бэкенда:
 npm run build
