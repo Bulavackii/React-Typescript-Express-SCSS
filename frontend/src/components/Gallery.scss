@@ -1,0 +1,50 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+}
+
+.gallery {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Уменьшаем отступ снизу заголовка */
+  }
+
+  .filter {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Центрируем фильтр */
+  }
+
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Уменьшаем отступы между изображениями */
+    justify-content: center; /* Центрируем изображения по горизонтали */
+    
+    .gallery-item {
+      flex: 1 1 calc(33% - 20px); /* Выравнивание трех элементов в строке */
+      max-width: 320px; /* Устанавливаем максимальную ширину для изображений */
+      box-sizing: border-box;
+      
+      .gallery-image {
+        width: 100%;
+        height: 200px; /* Устанавливаем фиксированную высоту */
+        object-fit: cover; /* Обеспечиваем правильное масштабирование изображений */
+        border-radius: 8px; /* Скругляем углы */
+      }
+    }
+  }
+}
+
+/* Стили для модального окна */
+.modal-image {
+  max-width: 90vw; /* Ограничиваем ширину модального окна */
+  max-height: 80vh; /* Ограничиваем высоту модального окна */
+  object-fit: contain; /* Сохраняем пропорции изображения */
+}

@@ -1,0 +1,89 @@
+// src/pages/RegisterPage.scss
+
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5; /* Основной фон страницы */
+  color: #333;
+  padding: 2rem;
+
+  .form-container {
+    background: #fff; /* Фон формы */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 200px;
+
+    h1 {
+      color: #51a6f7;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+
+      label {
+        display: flex;
+        align-items: center;
+        color: #333;
+        font-size: 1rem;
+
+        svg {
+          margin-right: 0.5rem;
+          color: #51a6f7;
+        }
+      }
+
+      input {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        margin-top: 0.25rem;
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #51a6f7; /* Окантовка кнопки */
+      border-radius: 4px;
+      background-color: #fff; /* Белый фон кнопки */
+      color: #51a6f7; /* Цвет текста кнопки */
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: #51a6f7; /* Фон при наведении */
+        color: #fff; /* Цвет текста при наведении */
+      }
+
+      &:first-of-type {
+        margin-bottom: 1rem; /* Отступ между кнопками */
+      }
+    }
+
+    .terms-link {
+      text-align: center;
+      margin-top: 1rem;
+
+      a {
+        color: #51a6f7;
+        text-decoration: none;
+        font-size: 0.875rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #4098d7;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+.icons {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end; /* Иконки прижаты к правому краю */
+}
+
+.icons-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icons-container a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px; /* Размер иконок */
+}
+
+.icons-container a:hover {
+  color: #fcfcfc; /* Эффект при наведении */
+  scale: 1.5;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 60px; /* Сдвинуть форму поиска влево, чтобы она не перекрывала другие иконки */
+  top: 50%; /* Центрирование по вертикали */
+  transform: translateY(-50%); /* Центрирование по вертикали */
+  background: #fff; /* Белый фон */
+  padding: 5px;
+  border-radius: 4px;
+  z-index: 10; /* Поле поиска поверх остальных элементов */
+  transition: opacity 0.3s ease, width 0.3s ease; /* Плавные изменения */
+  opacity: 0;
+  width: 0;
+}
+
+.search.open {
+  opacity: 1;
+  width: 180px; /* Ширина раскрытого поля поиска */
+}
+
+.search input {
+  padding: 5px;
+  border: 1px solid #51a6f7; /* Добавляем границу с цветом акцента */
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  width: 100%; /* Полная ширина поля поиска */
+}
+
+.search .fa-search {
+  color: #51a6f7; /* Цвет иконки поиска */
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search .fa-search:hover {
+  color: #333; /* Цвет иконки при наведении */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Располагаем меню под иконкой */
+  right: 0; /* Меню прижато к правому краю */
+  background: #fff; /* Белый фон меню */
+  border: 1px solid #51a6f7; /* Граница с цветом акцента */
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для меню */
+  z-index: 20; /* Меню поверх других элементов */
+  width: 150px; /* Ширина меню */
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu a {
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+  background: #51a6f7; /* Цвет фона при наведении */
+  color: #fff; /* Цвет текста при наведении */
+}

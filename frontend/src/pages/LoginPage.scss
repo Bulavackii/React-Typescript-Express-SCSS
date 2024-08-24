@@ -1,0 +1,65 @@
+/* src/pages/LoginPage.scss */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 4rem); /* Учитываем высоту Header и Footer */
+    padding: 2rem;
+    background-color: #f9f9f9;
+  
+    .login-container {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      width: 100%;
+      max-width: 400px;
+  
+      h1 {
+        margin-bottom: 1.5rem;
+        color: #333;
+        font-size: 1.5rem;
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+  
+        label {
+          margin-bottom: 0.5rem;
+          font-size: 1rem;
+          color: #555;
+        }
+  
+        input {
+          padding: 0.75rem;
+          margin-bottom: 1rem;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          font-size: 1rem;
+          outline: none;
+  
+          &:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+          }
+        }
+  
+        button {
+          padding: 0.75rem;
+          border: none;
+          border-radius: 4px;
+          background-color: #007bff;
+          color: #fff;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+    }
+  }
+  

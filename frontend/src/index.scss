@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box; /* Гарантирует, что padding и border включены в ширину и высоту элемента */
+}
+
+body, html {
+  width: 100%;
+  overflow-x: hidden; /* Удаляет горизонтальную прокрутку для всей страницы */
+}
+
+.container {
+  max-width: 100vw; /* Ограничивает ширину контейнера размером окна просмотра */
+  overflow-x: hidden;
+}

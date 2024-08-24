@@ -1,0 +1,20 @@
+.video-player {
+  max-width: 100%; /* Устанавливаем ширину видеоплеера */
+  margin: 0 auto; /* Центрируем видеоплеер */
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    color: #51a6f7;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  video {
+    width: 100%; /* Заполняем контейнер по ширине */
+    height: auto; /* Высота автоматически подстраивается */
+    border-radius: 8px;
+  }
+}

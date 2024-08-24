@@ -1,0 +1,36 @@
+.slider-wrapper {
+  max-width: 600px; /* Уменьшаем максимальную ширину слайдера */
+  margin: 0 auto;
+  padding: 20px; /* Добавляем отступы вокруг слайдера */
+  
+  .slider-title {
+    text-align: center;
+    margin-bottom: 20px; /* Добавляем отступ снизу */
+    font-size: 24px; /* Размер шрифта заголовка */
+    color: #51a6f7; /* Цвет заголовка, соответствующий цветовой гамме сайта */
+  }
+
+  .slider {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; /* Указываем, что контейнер кликабелен */
+
+    .slider-container {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+
+    .slider-slide {
+      flex: 0 0 100%; /* Каждое изображение занимает всю ширину контейнера */
+      height: 300px; /* Устанавливаем фиксированную высоту для слайдера */
+      position: relative;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Масштабируем изображение для заполнения контейнера */
+      }
+    }
+  }
+}

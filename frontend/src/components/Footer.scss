@@ -1,0 +1,161 @@
+// footer.scss
+
+.footer {
+  background-color: #51a6f7;
+  color: rgb(0, 0, 0);
+  padding: 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000; /* Обеспечиваем, что футер находится выше других элементов */
+
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Отступ между контентом и чертой */
+
+    .footer__left {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      .footer__logo {
+        img {
+          height: 80px;
+          display: block;
+          margin-left: 10px;
+          border: none; /* Убираем рамку у логотипа */
+        }
+      }
+    }
+
+    .footer__center {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      .footer__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4 {
+          margin-bottom: 10px;
+          font-size: 14px;
+          font-weight: bold;
+          color: #000000;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            margin-bottom: 5px;
+
+            a {
+              color: rgb(0, 0, 0);
+              text-decoration: none;
+
+              &:hover {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer__socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      max-width: calc(24px * 3 + 10px * 2); /* Ширина контейнера для 3 иконок в ряд */
+      justify-content: center;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+
+        img:hover {
+          scale: 1.5;
+        }
+      }
+
+      h4 {
+        color: #000000;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .footer__right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Прижимаем блок с картой вправо */
+    gap: 10px; /* Расстояние между картой и адресом */
+
+    .footer__map {
+      width: 120px; /* Ширина блока с картой */
+      height: 100px; /* Высота блока с картой */
+      margin-right: 10px; /* Отступ справа */
+      margin-top: 10px;
+      iframe {
+        width: 100%; /* Занимает всю ширину контейнера */
+        height: 100%; /* Занимает всю высоту контейнера */
+        border: none; /* Убираем рамку у iframe */
+      }
+    }
+
+    .footer__address {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Выравнивание по левому краю */
+      font-size: 14px; /* Размер шрифта для адреса */
+      color: #000000; /* Цвет текста адреса */
+
+      .footer__description {
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .footer__location {
+        margin: 0;
+      }
+
+      .footer__index {
+        margin: 0;
+      }
+    }
+  }
+
+  .footer__divider {
+    border-top: 1px solid #000000;
+    box-sizing: border-box; /* Учитываем границы и отступы */
+    margin: 0; /* Убираем отступы */
+  }
+
+  .footer__copyright {
+    background-color: #fff;
+    font-size: 12px;
+    color: #000000;
+    width: 100%; /* Убедитесь, что блок копирайта занимает всю ширину */
+    box-sizing: border-box; /* Учитываем границы и отступы */
+    text-align: center; /* Центрирование текста */
+    margin: 0; /* Убираем лишние отступы */
+  }
+}

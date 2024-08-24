@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #51a6f7;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.header__logo img {
+  width: 100px;
+  height: 40px;
+  scale: 3.5;
+  padding-left: 10px;
+}
+
+.header__nav {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__nav a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.header__nav a:hover {
+  color: #ffffff;
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Иконки прижаты к правому краю */
+  width: 100%;
+  position: relative; /* Для корректного отображения поиска */
+  
+}
+
+.header__icons a {
+  color: #000; // Изменяем цвет иконок на черный
+  text-decoration: none;
+  font-size: 24px; // Размер иконок
+}
+
+.header__icons a:hover {
+  color: #555; // Можно добавить немного более светлый оттенок черного для эффекта при наведении
+}
+
+/* Медиа-запросы для планшетов и настольных устройств */
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 15px;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__icons {
+    width: auto; /* Убираем фиксированную ширину */
+  }
+}
+

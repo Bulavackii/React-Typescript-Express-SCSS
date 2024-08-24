@@ -1,0 +1,65 @@
+/* src/pages/ArchivePage.scss */
+
+.archive-page {
+  padding: 2rem;
+  padding-bottom: 200px; /* Добавляем нижний отступ для корректного отображения содержимого */
+  background-color: #f5f5f5; /* Основной фон страницы */
+  color: #333; /* Основной цвет текста */
+  max-width: 1200px;
+  margin: 0 auto;
+
+  h1 {
+    color: #51a6f7;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .archive-section {
+    background-color: #fff; /* Фон секции */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для секции */
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: 1.75rem;
+      color: #51a6f7;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 0.5rem 0;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.25rem;
+        color: #555;
+        border-bottom: 1px solid #ddd;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+          background-color: #e0f0ff; /* Изменение фона при наведении */
+          color: #51a6f7;
+          cursor: pointer;
+        }
+
+        svg {
+          color: #51a6f7; /* Цвет иконок */
+        }
+      }
+
+      li:last-child {
+        border-bottom: none; /* Убираем нижнюю границу у последнего элемента */
+      }
+    }
+  }
+}

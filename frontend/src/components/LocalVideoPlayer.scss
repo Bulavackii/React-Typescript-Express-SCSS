@@ -1,0 +1,23 @@
+/* src/components/LocalVideoPlayer.scss */
+.local-video-player {
+    width: auto;
+    max-width: 600px; /* Устанавливаем максимальную ширину контейнера */
+    margin-top: 2rem; /* Отступ сверху для размещения */
+    text-align: center;
+  
+    h2 {
+      color: #51a6f7;
+      font-size: 1.5rem; /* Размер заголовка */
+    }
+  
+    video {
+      width: 100%; /* Заполняет контейнер по ширине */
+      height: auto; /* Высота автоматически подстраивается */
+      max-height: 315px; /* Ограничиваем максимальную высоту, чтобы соответствовать YouTube плееру */
+      border: 1px solid #51a6f7;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      object-fit: cover; /* Заполнение контейнера с обрезкой, чтобы сохранить соотношение сторон */
+    }
+  }
+  

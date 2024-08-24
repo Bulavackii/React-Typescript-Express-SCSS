@@ -1,0 +1,59 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+.contact {
+  max-width: 400px; /* Уменьшаем максимальную ширину формы */
+  margin: 50px auto; /* Отступы сверху и снизу, форма по центру */
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #51a6f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact h1 {
+  margin-bottom: 20px;
+  color: #51a6f7;
+  font-size: 24px;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin: 10px 0 5px;
+  color: #333;
+  font-size: 16px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #51a6f7;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.contact textarea {
+  resize: vertical; /* Позволяет изменять размер по вертикали */
+  height: 150px; /* Устанавливаем начальную высоту для текстовой области */
+}
+
+.contact button {
+  background-color: #51a6f7;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Кнопка занимает полную ширину формы */
+}
+
+.contact button:hover {
+  background-color: #417ab1;
+}

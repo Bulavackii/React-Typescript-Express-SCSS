@@ -1,0 +1,86 @@
+{
+  "name": "my-fullstack-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start-f": "npm --prefix frontend start",
+    "start-b": "npm --prefix backend start",
+    "dev-f": "npm --prefix frontend run dev",
+    "dev-b": "npm --prefix backend run dev",
+    "build": "webpack --config webpack.config.js --stats-error-details",
+    "lint-frontend": "npm --prefix frontend run lint",
+    "lint-backend": "npm --prefix backend run lint",
+    "lint-fix-frontend": "npm --prefix frontend run lint:fix",
+    "lint-fix-backend": "npm --prefix backend run lint:fix",
+    "format-frontend": "npm --prefix frontend run format",
+    "format-backend": "npm --prefix backend run format",
+    "build-frontend": "npm --prefix frontend run build",
+    "docker-build": "docker-compose build",
+    "docker-up": "docker-compose up",
+    "docker-down": "docker-compose down"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^8.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.3.0",
+    "react-modal": "^3.16.1",
+    "react-modal-image": "^2.6.0",
+    "react-router-dom": "^6.11.1"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/mongoose": "^5.11.97",
+    "@types/react-icons": "^2.2.7",
+    "@types/react-modal": "^3.16.3",
+    "@types/react-modal-image": "^2.6.3",
+    "css-loader": "^7.1.2",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb": "^19.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.32.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "file-loader": "^6.2.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.0",
+    "pug-loader": "^2.4.0",
+    "sass": "^1.77.8",
+    "sass-loader": "^16.0.0",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4",
+    "webpack": "^5.93.0",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
+  }
+}
